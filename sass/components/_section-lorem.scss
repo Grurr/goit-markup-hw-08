@@ -1,0 +1,104 @@
+.section-lorem {
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    min-width: 320px;
+    max-width: 480px;
+    &__lists-icons {
+        display: flex;
+        justify-content: space-around;
+        padding-left: 0;
+        flex-wrap: wrap;
+    }
+    &__icon {
+        position: absolute;
+        left: 20%;
+        top: -2%;
+    }
+    &__list-icons {
+        min-width: 290px;
+        max-width: 450px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    &__svg {
+        position: relative;
+        height: 120px;
+        min-width: 290px;
+        max-width: 480px;
+        background-color: var(--color-bg-icons);
+        border-radius: 4px;
+        margin-bottom: 30px;
+        overflow: hidden;
+    }
+    &__title {
+        font-weight: 700;
+        line-height: 1.172;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    &__paragraph {
+        line-height: 1.714;
+        margin-top: 0;
+        margin-bottom: 30px;
+        &--m-bottom {
+            margin-bottom: 0;
+        }
+                    
+    }
+}
+
+// TABLET
+
+@media screen and (min-width: 768px) {
+    .section-lorem {
+        max-width: 768px;
+        padding-top: 60px;
+        padding-bottom: 45px;
+        &__list-icons {
+            flex-basis: 354px;
+        }
+        &__svg {
+            width: 354px;
+        }
+        &__icon {
+            left: 12%;
+        }
+        &__title {
+            text-align: left;
+        }
+        &__paragraph {
+            margin-bottom: 30px;
+            &--m-bottom,
+            &--m-bottom-last {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+// DESKTOP
+
+@media screen and (min-width: 1200px) {
+    .section-lorem {
+        max-width: 1200px;
+        padding-top: 94px;
+        padding-bottom: 94px;
+        &__svg {
+            width: 270px;
+        }
+        &__list-icons {
+            flex-basis: 270px;
+        }
+        &__icon {
+            left: 0%;
+        }
+        &__title {
+            text-align: center;
+        }
+        &__paragraph {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--Metadata tags-->
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="css/modern-normalize.css" rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="css/main.min.css" rel="stylesheet" />
+
+		<!--Website tab tags-->
+		<title>WebStudio - portfolio</title>
+	</head>
+	<body>
+		<div class="container-header">
+			<header class="top-header container">
+				<button
+					class="menu-toggle js-open-menu"
+					aria-expanded="false"
+					aria-controls="mobile-menu"
+				>
+					<svg class="menu-toggle__svg" width="22" height="15">
+						<use href="./images/icons.svg#menu_24px"></use>
+					</svg>
+				</button>
+				<a class="top-header__logo" href="index.html"
+					><span class="span-logo">Web</span>Studio</a
+				>
+				<nav class="navigation">
+					<ul class="navigation__lists">
+						<li>
+							<a class="navigation__link navigation__link" href="index.html"
+								>Agencja</a
+							>
+						</li>
+						<li>
+							<a
+								class="navigation__link navigation__link--active"
+								href="portfolio.html"
+								>Portfolio</a
+							>
+						</li>
+						<li><a class="navigation__link" href="index.html">Kontakt</a></li>
+					</ul>
+				</nav>
+				<ul class="top-header__lists">
+					<li class="top-header__list top-header__list--m-bottom">
+						<a class="top-header__link" href="mailto:info@devstudio.com"
+							><svg class="top-header__icon" width="20" height="20">
+								<use href="./images/icons.svg#envelope"></use>
+							</svg>
+							info@devstudio.com</a
+						>
+					</li>
+					<li class="top-header__list top-header__list--m-right">
+						<a class="top-header__link" href="tel:+48111111111"
+							><svg class="top-header__icon" width="20" height="20">
+								<use href="./images/icons.svg#smartphone"></use>
+							</svg>
+							+48 111 111 111</a
+						>
+					</li>
+				</ul>
+			</header>
+		</div>
+		<main class="portfolio-sections">
+			<section class="section-filter section container">
+				<ul class="section-filter__lists">
+					<li class="section-filter__list">
+						<button class="section-filter__btn" type="button">Wszystkie</button>
+					</li>
+					<li class="section-filter__list">
+						<button class="section-filter__btn" type="button">Strony</button>
+					</li>
+					<li class="section-filter__list">
+						<button class="section-filter__btn" type="button">Aplikacje</button>
+					</li>
+					<li class="section-filter__list">
+						<button class="section-filter__btn" type="button">Dizajn</button>
+					</li>
+					<li class="section-filter__list">
+						<button class="section-filter__btn" type="button">Marketing</button>
+					</li>
+				</ul>
+			</section>
+			<section class="section-grid section container">
+				<ul class="section-grid__lists">
+					<li class="section-grid__list section-grid__list--m-right">
+						<div class="section-grid__img-container">
+							<img
+								src="./images/img-portfolio-1.jpg"
+								srcset="
+									./images/img-portfolio-1@2x.jpg  480w,
+									./images/img-portfolio-1@2x.jpg  768w,
+									./images/img-portfolio-1.jpg    1200w
+								"
+								sizes="(min-width: 768w) 354px 294px,
+                       (min-width: 1200w) 370px 294px,
+                       450px 294px"
+								alt="Strona internetowa firmy Technocrack, widać troje ludzi"
+							/>
+							<div class="section-grid__text-container">
+								<p class="section-grid__text">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Ipsum, ex at quasi aliquid magni pariatur quas impedit
+									molestiae quae fugiat qui nam totam labore sed? Debitis unde
+									tempora quidem eius.
+								</p>
+							</div>
+						</div>
+						<div class="section-grid__title-container">
+							<h3 class="section-grid__title">Technocrack</h3>
+							<p class="section-grid__subtitle">Strona internetowa</p>
+						</div>
+					</li>
+					<li class="section-grid__list">
+						<div class="section-grid__img-container">
+							<img
+								src="./images/img-portfolio-2.jpg"
+								srcset="
+									./images/img-portfolio-2@2x.jpg  480w,
+									./images/img-portfolio-2@2x.jpg  768w,
+									./images/img-portfolio-2.jpg    1200w
+								"
+								sizes="(min-width: 768w) 354px 294px,
+                       (min-width: 1200w) 370px 294px,
+                       450px 294px"
+								alt="Grafika New Orlean vs Golden Star,dwóch koszykarzy walczy o piłkę"
+							/>
+							<div class="section-grid__text-container">
+								<p class="section-grid__text">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Ipsum, ex at quasi aliquid magni pariatur quas impedit
+									molestiae quae fugiat qui nam totam labore sed? Debitis unde
+									tempora quidem eius.
+								</p>
+							</div>
+						</div>
+						<div class="section-grid__title-container">
+							<h3 class="section-grid__title">
+								Grafika New Orlean vs Golden Star
+							</h3>
+							<p class="section-grid__subtitle">Dizajn</p>
+						</div>
+					</li>
+					<li class="section-grid__list section-grid__list--m-right">
+						<div class="section-grid__img-container">
+							<img
+								src="./images/img-portfolio-3.jpg"
+								srcset="
+									./images/img-portfolio-3@2x.jpg  480w,
+									./images/img-portfolio-3@2x.jpg  768w,
+									./images/img-portfolio-3.jpg    1200w
+								"
+								sizes="(min-width: 768w) 354px 294px,
+                       (min-width: 1200w) 370px 294px,
+                       450px 294px"
+								alt="Logo restauracji, widać napis The seafood na tle ryby"
+							/>
+							<div class="section-grid__text-container">
+								<p class="section-grid__text">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Ipsum, ex at quasi aliquid magni pariatur quas impedit
+									molestiae quae fugiat qui nam totam labore sed? Debitis unde
+									tempora quidem eius.
+								</p>
+							</div>
+						</div>
+						<div class="section-grid__title-container">
+							<h3 class="section-grid__title">Restauracja Seafood</h3>
+							<p class="section-grid__subtitle">Aplikacja</p>
+						</div>
+					</li>
+					<li class="section-grid__list">
+						<div class="section-grid__img-container">
+							<img
+								src="./images/img-portfolio-4.jpg"
+								srcset="
+									./images/img-portfolio-4@2x.jpg  480w,
+									./images/img-portfolio-4@2x.jpg  768w,
+									./images/img-portfolio-4.jpg    1200w
+								"
+								sizes="(min-width: 768w) 354px 294px,
+                       (min-width: 1200w) 370px 294px,
+                       450px 294px"
+								alt="Słuchawki nauszne"
+							/>
+							<div class="section-grid__text-container">
+								<p class="section-grid__text">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Ipsum, ex at quasi aliquid magni pariatur quas impedit
+									molestiae quae fugiat qui nam totam labore sed? Debitis unde
+									tempora quidem eius.
+								</p>
+							</div>
+						</div>
+						<div class="section-grid__title-container">
+							<h3 class="section-grid__title">Projekt Prime</h3>
+							<p class="section-grid__subtitle">Marketing</p>
+						</div>
+					</li>
+					<li class="section-grid__list section-grid__list--m-right">
+						<div class="section-grid__img-container">
+							<img
+								src="./images/img-portfolio-5.jpg"
+								srcset="
+									./images/img-portfolio-5@2x.jpg  480w,
+									./images/img-portfolio-5@2x.jpg  768w,
+									./images/img-portfolio-5.jpg    1200w
+								"
+								sizes="(min-width: 768w) 354px 294px,
+                       (min-width: 1200w) 370px 294px,
+                       450px 294px"
+								alt="Projekt pudełek, dwa pudełka leżą obok siebie, jedno większe od drugiego"
+							/>
+							<div class="section-grid__text-container">
+								<p class="section-grid__text">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Ipsum, ex at quasi aliquid magni pariatur quas impedit
+									molestiae quae fugiat qui nam totam labore sed? Debitis unde
+									tempora quidem eius.
+								</p>
+							</div>
+						</div>
+						<div class="section-grid__title-container">
+							<h3 class="section-grid__title">Projekt Boxes</h3>
+							<p class="section-grid__subtitle">Aplikacja</p>
+						</div>
+					</li>
+					<li class="section-grid__list">
+						<div class="section-grid__img-container">
+							<img
+								src="./images/img-portfolio-6.jpg"
+								srcset="
+									./images/img-portfolio-6@2x.jpg  480w,
+									./images/img-portfolio-6@2x.jpg  768w,
+									./images/img-portfolio-6.jpg    1200w
+								"
+								sizes="(min-width: 768w) 354px 294px,
+                       (min-width: 1200w) 370px 294px,
+                       450px 294px"
+								alt="Strona internetowa, informacje o firmie"
+							/>
+							<div class="section-grid__text-container">
+								<p class="section-grid__text">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Ipsum, ex at quasi aliquid magni pariatur quas impedit
+									molestiae quae fugiat qui nam totam labore sed? Debitis unde
+									tempora quidem eius.
+								</p>
+							</div>
+						</div>
+						<div class="section-grid__title-container">
+							<h3 class="section-grid__title">Inspiration has no Borders</h3>
+							<p class="section-grid__subtitle">Strona internetowa</p>
+						</div>
+					</li>
+					<li class="section-grid__list section-grid__list--m-right">
+						<div class="section-grid__img-container">
+							<img
+								src="./images/img-portfolio-7.jpg"
+								srcset="
+									./images/img-portfolio-7@2x.jpg  480w,
+									./images/img-portfolio-7@2x.jpg  768w,
+									./images/img-portfolio-7.jpg    1200w
+								"
+								sizes="(min-width: 768w) 354px 294px,
+                       (min-width: 1200w) 370px 294px,
+                       450px 294px"
+								alt="Otwarty magazyn a w nim zdjęcia"
+							/>
+							<div class="section-grid__text-container">
+								<p class="section-grid__text">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Ipsum, ex at quasi aliquid magni pariatur quas impedit
+									molestiae quae fugiat qui nam totam labore sed? Debitis unde
+									tempora quidem eius.
+								</p>
+							</div>
+						</div>
+						<div class="section-grid__title-container">
+							<h3 class="section-grid__title">Magazyn Limited Edition</h3>
+							<p class="section-grid__subtitle">Dizajn</p>
+						</div>
+					</li>
+					<li class="section-grid__list">
+						<div class="section-grid__img-container">
+							<img
+								src="./images/img-portfolio-8.jpg"
+								srcset="
+									./images/img-portfolio-8@2x.jpg  480w,
+									./images/img-portfolio-8@2x.jpg  768w,
+									./images/img-portfolio-8.jpg    1200w
+								"
+								sizes="(min-width: 768w) 354px 294px,
+                       (min-width: 1200w) 370px 294px,
+                       450px 294px"
+								alt="Zawieszka  z napisem labeltag"
+							/>
+							<div class="section-grid__text-container">
+								<p class="section-grid__text">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Ipsum, ex at quasi aliquid magni pariatur quas impedit
+									molestiae quae fugiat qui nam totam labore sed? Debitis unde
+									tempora quidem eius.
+								</p>
+							</div>
+						</div>
+						<div class="section-grid__title-container">
+							<h3 class="section-grid__title">Projekt LAB</h3>
+							<p class="section-grid__subtitle">Marketing</p>
+						</div>
+					</li>
+					<li class="section-grid__list">
+						<div class="section-grid__img-container">
+							<img
+								src="./images/img-portfolio-9.jpg"
+								srcset="
+									./images/img-portfolio-9@2x.jpg  480w,
+									./images/img-portfolio-9@2x.jpg  768w,
+									./images/img-portfolio-9.jpg    1200w
+								"
+								sizes="(min-width: 768w) 354px 294px,
+                       (min-width: 1200w) 370px 294px,
+                       450px 294px"
+								alt="Laptop a na nim uruchomiona aplikacja"
+							/>
+							<div class="section-grid__text-container">
+								<p class="section-grid__text">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Ipsum, ex at quasi aliquid magni pariatur quas impedit
+									molestiae quae fugiat qui nam totam labore sed? Debitis unde
+									tempora quidem eius.
+								</p>
+							</div>
+						</div>
+						<div class="section-grid__title-container">
+							<h3 class="section-grid__title">Growing Business</h3>
+							<p class="section-grid__subtitle">Aplikacja</p>
+						</div>
+					</li>
+				</ul>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-info">
+					<a class="footer-info__logo" href="index.html"
+						><span class="span-logo">Web</span>Studio</a
+					>
+					<address class="footer-info__adress">
+						m. Warszawa, Aleje Jerozolimskie 21
+					</address>
+					<ul class="footer-info__lists">
+						<li class="footer-info__list footer-info__list--margin-bottom">
+							<a
+								class="footer-info__link contact"
+								href="mailto:info@example.com"
+								>info@example.com</a
+							>
+						</li>
+						<li class="footer-info__list footer-info__list--margin-bottom-last">
+							<a class="footer-info__link contact" href="tel:+48111111111"
+								>+48 111 111 111</a
+							>
+						</li>
+					</ul>
+				</div>
+				<div class="socials">
+					<h4 class="socials__title">Dołącz do nas</h4>
+					<ul class="socials__lists">
+						<li class="socials__list">
+							<a class="socials__link" href="index.html">
+								<svg class="social-icon">
+									<use
+										href="./images/icons.svg#instagram-2"
+										width="20"
+										height="20"
+										x="12"
+										y="12"
+									></use>
+								</svg>
+							</a>
+						</li>
+						<li class="socials__list socials__list--margin-left">
+							<a class="socials__link" href="index.html">
+								<svg class="social-icon">
+									<use
+										href="./images/icons.svg#twitter-1"
+										width="20"
+										height="20"
+										x="12"
+										y="12"
+									></use>
+								</svg>
+							</a>
+						</li>
+						<li class="socials__list socials__list--margin-left">
+							<a class="socials__link" href="index.html">
+								<svg class="social-icon">
+									<use
+										href="./images/icons.svg#facebook-1"
+										width="20"
+										height="20"
+										x="12"
+										y="12"
+									></use>
+								</svg>
+							</a>
+						</li>
+						<li class="socials__list socials__list--margin-left">
+							<a class="socials__link" href="index.html">
+								<svg class="social-icon">
+									<use
+										href="./images/icons.svg#linkedin-1"
+										width="20"
+										height="20"
+										x="12"
+										y="12"
+									></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="newsletter">
+					<form class="newsletter__form">
+						<label for="join">
+							<h4 class="newsletter__title">Zapisz się do newslettera</h4>
+							<input
+								class="newsletter__input"
+								type="email"
+								placeholder="E-mail"
+								name="join"
+								id="join"
+							/>
+						</label>
+						<button class="newsletter__button" type="submit">
+							Zapisz się
+							<svg class="newsletter__icon" width="17" height="17">
+								<use href="./images/icons.svg#icon-send"></use>
+							</svg>
+						</button>
+					</form>
+				</div>
+			</div>
+		</footer>
+		<div class="menu-container js-menu-container" id="mobile-menu">
+			<button class="menu-toggle menu-toggle--close js-close-menu">
+				<svg
+					class="menu-toggle__svg menu-toggle__svg--close"
+					width="40"
+					height="40"
+				>
+					<use href="./images/icons.svg#close_40px"></use>
+				</svg>
+			</button>
+			<nav class="navigation-mobile">
+				<ul class="navigation-mobile__lists">
+					<li
+						class="navigation-mobile__list navigation-mobile__list--padding-bottom"
+					>
+						<a class="navigation-mobile__link" href="index.html">Agencja</a>
+					</li>
+					<li
+						class="navigation-mobile__list navigation-mobile__list--padding-bottom"
+					>
+						<a class="navigation-mobile__link" href="portfolio.html"
+							>Portfolio</a
+						>
+					</li>
+					<li class="navigation-mobile__list">
+						<a class="navigation-mobile__link" href="index.html">Kontakt</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="mobile-container">
+				<ul class="top-header-mobile__lists">
+					<li class="top-header-mobile__list">
+						<a class="top-header-mobile__link" href="tel:+48111111111">
+							+48 111 111 111</a
+						>
+					</li>
+					<li class="top-header-mobile__list">
+						<a
+							class="top-header-mobile__link top-header-mobile__link--gray"
+							href="mailto:info@devstudio.com"
+						>
+							info@devstudio.com</a
+						>
+					</li>
+				</ul>
+				<ul class="social-media-mobile">
+					<li class="social-media-mobile__list">
+						<a
+							class="social-media-mobile__link social-media-mobile__link--no-p-left"
+							href="#"
+							>Instagram</a
+						>
+					</li>
+					<li class="social-media-mobile__list">
+						<a class="social-media-mobile__link" href="#">Twitter</a>
+					</li>
+					<li class="social-media-mobile__list">
+						<a class="social-media-mobile__link" href="#">Facebook</a>
+					</li>
+					<li class="social-media-mobile__list">
+						<a
+							class="social-media-mobile__link social-media-mobile__link--no-b-right"
+							href="#"
+							>Linkedin</a
+						>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+			crossorigin="anonymous"
+		></script>
+		<script defer src="js/mobile-menu.js"></script>
+	</body>
+</html>

@@ -1,0 +1,99 @@
+.background-img {
+    max-width: 768px;
+    min-width: 320px;
+    margin: 0 auto;
+    background-image: linear-gradient(var(--color-header-gadient),
+            var(--color-header-gadient)),
+        url("../images/img-header@2x.jpg");
+    height: 400px;
+    background-position: center;
+    background-size: auto;
+    background-size: cover;
+}
+
+.section-header {
+    background-color: var(--color-bg-main);
+    padding: 0;
+    max-width: 1600px;
+    margin: 0 auto;
+    & .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        max-width: 480px;
+        padding-top: 118px;
+        padding-bottom: 118px;
+        }
+    &__title {
+        font-weight: 900;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--color-white);
+        margin: 0;
+        font-size: 26px;
+        padding: 0 50px 30px;
+        line-height: 1.615;
+    }
+    &__btn {
+        font-family: var(--font-roboto);
+        color: var(--color-white);
+        background-color: var(--color-logo);
+        font-size: 16px;
+        line-height: 1.875;
+        font-weight: 700;
+        text-align: center;
+        padding: 10px 41px 10px 42px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border: 0;
+        border-radius: 4px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            background-color: var(--color-logo-dark);
+        }
+    }
+}
+
+// TABLET
+
+@media screen and (min-width: 768px) {
+    .background-img {
+        max-width: 1200px;
+    }
+    .section-header {
+        .container {
+            max-width: 768px;
+        }
+        &__title {
+            padding: 0 180px 30px;
+        }
+    }
+}
+
+// DESKTOP
+
+@media screen and (min-width: 1200px) {
+    .background-img {
+        max-width: 1600px;
+        height: 600px;
+        background-image: linear-gradient(var(--color-header-gadient),
+            var(--color-header-gadient)),
+            url("../images/img-header.jpg");
+    }
+    .section-header {
+        .container {
+            max-width: 1600px;
+            padding-top: 200px;
+            padding-bottom: 200px;
+        }
+        &__title {
+            padding: 0 252px 30px;
+            font-size: 44px;
+            line-height: 1.363;
+        }
+    }
+}
+

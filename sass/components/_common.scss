@@ -1,0 +1,108 @@
+body {
+    font-family: var(--font-roboto), var(--font-raleway), var(--font-sansserif);
+    color: var(--color-main);
+    font-size: 14px;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    &__title {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.171;
+        margin: 0 0 30px;
+        letter-spacing: 0.03em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .section {
+        &__title {
+            margin: 0 0 50px;
+        }
+    }
+}
+
+.navigation,
+.top-header,
+.footer-info {
+    &__link {
+        align-items: center;
+        text-decoration: none;
+        color: var(--color-main);
+        line-height: 1.173;
+        letter-spacing: 0.02em;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.icon {
+    position: relative;
+    top: 5px;
+    margin: auto;
+}
+
+.section-lorem {
+    &__icon {
+        position: relative;
+        top: 5px;
+    }
+}
+
+.top-header,
+.footer-info {
+    &__logo {
+        font-family: var(--font-raleway);
+        text-decoration: none;
+        font-size: 26px;
+        line-height: 1.173;
+        letter-spacing: 0.03em;
+    }
+}
+
+.main-sections .portfolio-sections {
+    letter-spacing: 0.03em;
+}
+
+.section-lorem {
+    &__paragraph {
+        color: var(--color-contact);
+    }
+}
+
+.section-team {
+    &__job {
+       color: var(--color-contact);
+    }
+}
+
+.section-filter,
+.section-header {
+    &__btn {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
